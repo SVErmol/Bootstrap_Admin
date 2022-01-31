@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<html>
+
+<head>
+
+  <!-- jQuery 1.8 or later, 33 KB -->
+
+  <!-- Fotorama from CDNJS, 19 KB -->
+
+  <!-- <script src="bootstrap/js/bootstrap.js"></script>  
+ <script src="bootstrap/js/jquery.min.js"></script>   -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сотрудники</title>
+  <meta charset="utf-8" />
+  <script> </script>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  /> -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light ">
+      <a class="navbar-brand " href="index.html">
+        <div class="btn btn-light">FLEUR DE BEAUTÉ</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+
+            <a class="nav-link" href="clients.html">Клиенты</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Товары </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="catalog.html">Цветы</a>
+              <a class="dropdown-item" href="catalog.html">Букеты</a>
+              <a class="dropdown-item" href="catalog.html">Розы</a>
+              <a class="dropdown-item" href="catalog.html">Подарки</a>
+              <a class="dropdown-item" href="catalog.html">Шары</a>
+              <a class="dropdown-item" href="catalog.html">Оформление</a>
+              <!-- <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+        </div> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders.html">Заказы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback_.html">Обратная связь</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Сотрудники</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="purveyor.html">Поставщики</a>
+          </li>
+          <a class="nav-link" href="setting.html">Настройки <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Выход</a>
+          </li>
+        </ul>
+
+      </div>
+      <!--/.nav-collapse -->
+    </nav>
+    <!--/.navbar -->
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Сотрудники</li>
+      </ol>
+    </nav>
+    <h1 class="">Сотрудники</h1>
+
+    <a href="add_employee.html" class="btn btn-secondary  ml-auto d-block   col-lg-1  mb-1"><i
+        class="fas fa-plus"></i></a>
+
+
+
+    <div class="row ">
+
+      <div class="col-lg-3 ">
+        <h2>Поиск</h2>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Номер сотрудника</b></label>
+            <input class="form-control">
+
+          </div>
+          <div class="pb-3">
+            <b>Должность</b>
+            <select class="form-control" aria-label="Default select example">
+              <option selected></option>
+              <option value="1">Администратор</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Номер телефона</b></label>
+            <input class="form-control">
+
+          </div>
+
+          <button type="submit" class="btn btn-primary   btn-block ml-auto">Найти</button>
+        </form>
+      </div>
+
+
+
+      <div class=" col-lg-9 ">
+        <div class="form-group mt-3 row">
+          <label for="inputEmail3" class=" ml-3 mr-au col-form-label">Сортировка</label>
+          <div class="col-lg-3 col-md-4 col-sm-12 ">
+            <select class="form-control " aria-label="Default select example">
+              <option selected></option>
+              <option value="1">По номеру клиента</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <label for="inputEmail3" class="col-form-label ml-lg-auto ml-md-auto ml-3  ">Показать по</label>
+          <div class="col-lg-3 col-md-4 col-sm-12 ">
+            <select class="form-control" aria-label="Default select example">
+              <option selected></option>
+              <option value="1">10</option>
+              <option value="2">20</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+
+        </div>
+        <div class="row mt-2  justify-content-center ">
+          <div class="col-12 mb-4 col-xl-6 col-lg-6">
+            <div class="card p-1  ">
+              <div class="card-header">
+                <table class="table-sm">
+                  <tr>
+                    <td><b>Номер сотрудника:</b></td>
+                    <td><a href="card_employee.html">34345</a></td>
+                  </tr>
+                </table>
+              </div>
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Имя:</b></td>
+                      <td>Светлана</td>
+                    </tr>
+                  </table>
+                </li>
+
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Должность:</b></td>
+                      <td>Администратор</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Номер телефона:</b></td>
+                      <td>3433456745</td>
+                    </tr>
+                  </table>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 mb-4 col-xl-6 col-lg-6">
+            <div class="card p-1  ">
+              <div class="card-header">
+                <table class="table-sm">
+                  <tr>
+                    <td><b>Номер сотрудника:</b></td>
+                    <td><a href="card_employee.html">34345</a></td>
+                  </tr>
+                </table>
+              </div>
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Имя:</b></td>
+                      <td>Светлана</td>
+                    </tr>
+                  </table>
+                </li>
+
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Должность:</b></td>
+                      <td>Администратор</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Номер телефона:</b></td>
+                      <td>3433456745</td>
+                    </tr>
+                  </table>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 mb-4 col-xl-6 col-lg-6">
+            <div class="card p-1  ">
+              <div class="card-header">
+                <table class="table-sm">
+                  <tr>
+                    <td><b>Номер сотрудника:</b></td>
+                    <td><a href="card_employee.html">34345</a></td>
+                  </tr>
+                </table>
+              </div>
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Имя:</b></td>
+                      <td>Светлана</td>
+                    </tr>
+                  </table>
+                </li>
+
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Должность:</b></td>
+                      <td>Администратор</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Номер телефона:</b></td>
+                      <td>3433456745</td>
+                    </tr>
+                  </table>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 mb-4 col-xl-6 col-lg-6">
+            <div class="card p-1  ">
+              <div class="card-header">
+                <table class="table-sm">
+                  <tr>
+                    <td><b>Номер сотрудника:</b></td>
+                    <td><a href="card_employee.html">34345</a></td>
+                  </tr>
+                </table>
+              </div>
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Имя:</b></td>
+                      <td>Светлана</td>
+                    </tr>
+                  </table>
+                </li>
+
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Должность:</b></td>
+                      <td>Администратор</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="list-group-item">
+                  <table class="table-sm">
+                    <tr>
+                      <td><b>Номер телефона:</b></td>
+                      <td>3433456745</td>
+                    </tr>
+                  </table>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <!-- Подключаем jQuery -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- Подключаем плагин Popper -->
+  <script src="js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+       crossorigin="anonymous"></script> -->
+
+  <!-- Подключаем Bootstrap JS -->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+</body>
